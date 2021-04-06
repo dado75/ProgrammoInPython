@@ -2,8 +2,8 @@ count = 0
 n = 9999999
 r = 0
 
-min = int(input("iNSERISCI IL MINIMO DEL DOMINIO DI SCELTA: "))
-max = int(input("iNSERISCI IL MASSIMO DEL DOMINIO DI SCELTA: "))
+min = int(input("INSERISCI IL MINIMO DEL DOMINIO DI SCELTA: "))
+max = int(input("INSERISCI IL MASSIMO DEL DOMINIO DI SCELTA: "))
 
 while n != 0:
     count += 1

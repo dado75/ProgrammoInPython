@@ -1,5 +1,6 @@
 #def controllo_patenti(età, patente):
 
+
 età = int(input('Quanti anni hai? '))
 while età >= 18:
     patente = input('Bene sei maggiorenne!! Hai la patente? SI/NO: ')
