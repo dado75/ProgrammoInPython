@@ -13,15 +13,23 @@
 #    if int(n) % conta == 0:
 #        print(conta)
 #----------------------------
-while True:
-    div = 2
-    count = 0
-    n = int(input('Trova i divisori di questo numero: '))
-    for conta in range (1,n+1):
+#while True:
+#    div = 2
+#    count = 0
+#    n = int(input('Trova i divisori di questo numero: '))
+#    for conta in range (1,n+1):
         #if int(n) % conta == 0:
 #            if print(conta) == 1:
-            if conta == (1,conta):
-                print(conta)
+#            if conta == (1,conta):
+#                print(conta)
 
 
 
+for n in range(2, 30):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'uguale', x, '*', n//x)
+            break
+    else:
+        print(n, 'è un numero primo')
+#        print(n)
