@@ -25,8 +25,6 @@ while choice != "q":
         print_options()
     choice = input("option: ") """
 
-from funzioni_geometriche import*
-
 # ciclone
 scegli = "p"
 while scegli != "ESC":
