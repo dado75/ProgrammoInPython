@@ -1,5 +1,5 @@
 from funz_operaz import*
-
+#import funz_operaz
 while True:
     print('''
     Calcolatrice:
@@ -7,7 +7,7 @@ while True:
     Per scegliere l'operazione da eseguire
     Oppure scrivi ESC per uscire
     ''')
-    operazione = input()
+    operazione = input("Inserisci il simbolo dell'operazione: ")
     if operazione == "+":
         num1 = int(input())
         num2 = int(input())
