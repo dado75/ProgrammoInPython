@@ -1,5 +1,6 @@
 #Operazioni geometriche
 while True:
+
     print('''
     Ciao e benvenuto. Calcola le aree dei poligoni!!!
     Creato da: Dado

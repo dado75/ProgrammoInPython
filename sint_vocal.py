@@ -1,14 +1,20 @@
+import os
 from gtts import gTTS
-#import subprocess
+from playsound import playsound
 
-text = """
-Rilascio rotante
+file = input('input name file: ')
+try:
+    #text = open(file)
+    with open(file) as str:
+        text = list(str)
+except:
+    print('File connot be opened:' , file)
+    exit()
 
-Garuda Linux è una distribuzione a rilascio progressivo basata su Arch Linux che garantisce di ricevere sempre gli ultimi aggiornamenti software.
+for pippo in text:
+    #pippo = pippo.strip()
+    tts = gTTS(text=pippo, lang='it')
+    tts.save("audio.mp3")
 
-Usiamo solo un repository aggiuntivo sopra i repository Arch Linux, posizionandoci molto vicini ad Arch Linux senza dover installare il sistema con la CLI.
-"""
-tts = gTTS(text=text, lang='it')
-tts.save("tts_output_audio.mp3")
 print("tutto fatto, file salvato!")
-#subprocess.run(["tts_output_audio.mp3"])
+playsound('audio.mp3')
