@@ -85,6 +85,8 @@ class Automobile(Mezzi_trasporto):
         self.serbatoio += litri
 
 auto = Automobile('elettrica', 8, 'privato', 'Tesla' , 0, 'nera', 50, [ 'aria condizionata', 'vetri oscurati'])
+mezzo = Mezzi_trasporto('idrogeno', 10,'privato')
+print(mezzo.scheda_mezzo_trasporto())
 
 print('km iniziali: ', auto.chilometri)
 auto.guida(1000)
@@ -96,7 +98,7 @@ print('serbatoio finale: ', auto.serbatoio)
 
 print(auto.scheda_auto())
 
-print(help(Automobile))
+#print(help(Automobile))
 
 auto.modifica_scheda_auto()
 print(auto.scheda_auto())
@@ -106,4 +108,4 @@ mezzo_trasporto1 = Mezzi_trasporto.from_string(monopattino_elettrico)
 
 print(mezzo_trasporto1.scheda_mezzo_trasporto())
 
-#print(auto.scheda_mezzo_trasporto())
+print(auto.scheda_mezzo_trasporto())

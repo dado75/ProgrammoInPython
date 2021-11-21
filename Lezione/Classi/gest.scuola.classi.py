@@ -25,7 +25,7 @@ class Persona:
         info = """
         Nome: Persona
         Creato da: Davide Piccolo
-        Commenti: Primo programma serio in python 3.7"""
+        Commenti: Scritto in python 3.7"""
 
         return info
         
@@ -113,13 +113,13 @@ insegnante_uno.aggiungi_materia("Sociologia della comunicazione")
 studente_uno.cambio_corso("Filosofia")
 print(studente_uno.scheda_personale())
 print(insegnante_uno.scheda_personale())
-print(help(Studente))
+#print(help(Studente))
 
 Ginetto = "Gino-Peppino-40-Sorrento"
-semetto = "Orlando-Cazzone-56-Cesenatico"
+Marino = "Orlando-Serione-56-Cesenatico"
 
 insg1 = Insegnante.from_string(Ginetto, "Tuttologia")
-stud1 = Studente.from_string(semetto, "Deficentologia")
+stud1 = Studente.from_string(Marino, "Deficentologia")
 
 print(insg1.occupazione())
 print(stud1.occupazione())
